@@ -1,0 +1,236 @@
+	/* size: ipad mini*/
+	body{
+		margin: 0 auto;
+	}
+	.big-res-header{
+		display: none;
+	}
+	.mobile-res-header{
+		display: none;
+	}
+	.ipad-header{
+		display: flex;
+		box-sizing: border-box;
+		justify-content: space-between;
+		margin: auto;
+	}
+	.nav-menu-ipad{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		min-width: 350px;
+	}
+	.hébergement-header{
+		display: flex;
+		box-sizing: border-box;
+		border-top: 2px solid #0065FC;
+		border-bottom: none;
+	 	align-items: center;
+	 	padding-top: 30px;
+	 	padding-right: 35px;
+	 	padding-left: 35px;
+	 	text-decoration: none;
+	 	color: #0065FC;
+	}
+	.activités-header{
+		border-bottom: none;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		color: black;
+		padding-top: 30px;
+		text-decoration: none;
+		margin-right: 14px;
+	}
+	.inscription-header{
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-top: 30px;
+		text-decoration: none;
+		color: #0065FC;
+		font-weight: bold;
+	}
+	.logo-ipad{
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-top: 30px
+	}
+	.group-filtres{
+		display: flex;
+		align-items: baseline;
+		margin-top: 12px;
+	}
+	.small-form{/* group form écnomique*/
+		margin-left: 5.5px;
+	}
+	.fam-small{/* group form Familial*/
+		margin-left: 5.5px;
+	}
+	.group-romantic{/* group form romantique*/
+		margin-left: 5.5px;
+	}
+	.group-animaux{/* animaux autorisés*/
+		margin-left: -9.5px;
+	}
+	.eco-button-small{/*text "économique"/ ipad mini768px(7,9 pouces*/
+		padding-left: 48px;
+		width: 148px;
+	}
+	.fam-button-small{/*text "familial"/ ipad mini768px(7,9 pouces*/
+		padding-left: 50px;
+		width: 118px;
+	}
+	.rom-button{/*text "romantique"/ ipad mini768px(7,9 pouces*/
+		padding-left: 48px;
+		width: 144px;
+	}
+	.anim-button{/*text "animaux autorisés"/ ipad mini768px(7,9 pouces*/
+		padding-left: 50px;
+		width: 200px;
+	}
+	.group-popular{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.pop-title-and-icon{
+		display: flex;
+		box-sizing: border-box;
+		margin: auto;
+	}
+	.all-art-pop{/*all articles of group populaire (ipad mini 768px)*/
+		display: flex;
+		flex-direction: column;
+		margin-top: 1%;
+	}
+	.art-pop{/*each article of group populaire (ipad mini 768px)*/
+		margin-bottom: 28px;
+	}
+	.ipad-photos {/*photos of group populaire (ipad mini 768px)*/
+		border-radius: 15px 15px 0px 0px  !important;
+		margin-top: 0px !important;
+		width: 100%;
+		border: 4px solid white;
+		box-sizing: border-box;
+	}
+	.photos-popular{
+		display: none;
+	}
+	.conteneur-text-pop{/* text container/group populaire (ipad mini 768px)*/
+		border-radius: 0px 0px 20px 20px;
+		max-width: 67%;
+		max-height: 100%;
+	}
+	.h2-pop{/* h2 group populaire(ipad mini 768px)*/
+		padding-left: 10px;
+	}
+	.pop-price{/* Prix group populaire (ipad mini 768px)*/
+		padding-left: 10px;
+	}
+	.star-group-pop{/* star group / group populaire(ipad mini 768px)*/
+		padding-left: 10px;
+		margin-bottom: 10%;
+	}
+	.titre-marseille{/* Title group Marseille(ipad mini 768px)*/
+		margin-top: 42px;
+	}
+	.line1-art-mars{
+		max-width: 500px;
+		margin-top: 30px;
+	}
+	.line2-art-mars{
+		max-width: 500px;
+		margin-top: 30px;
+	}
+	.art-act-m{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 32px;
+		width: 445px;
+		}
+	.conteneur-text-mars{
+	}
+	.group-marseille{
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.plus-Marseille{/* Last phrase /group Marseille(ipad mini 768px)*/
+		margin-top: 40px;
+		margin-bottom: 40px
+	}
+	.group-act-mars{
+		width: 445px;
+		box-sizing: border-box;
+		margin: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.group-footer{/*  All tests together /footer /Activités Marseille (ipad mini 768px)*/
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding-left: 7%;
+		padding-right: 7%;
+		margin: auto;
+	}
+	.titre-act-marseille{/*  Title /Activités Marseille (ipad mini 768px)*/
+		margin-bottom: 34px;
+	}
+	.small-res-photo-act-mars{
+		border-radius: 15px 0px 0px 15px;
+	}
+	.conteneur-text-act-mars{
+		background-color: white;
+	}
+	.h2-act-mars{
+		margin-top: 50px;
+		margin-left: 20px;
+	}
+	.group-footer-mob{
+		display: none;
+	}
+	@media screen and (min-width:1024px) and (max-width:1366px){
+						.all-art-pop{
+				flex-direction: row;
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+			.photos-popular{
+				border-radius: 20px 20px 0px 0px;
+				width: 60%;
+				height: 50%
+			}
+			.art-pop{
+				display: flex;
+				flex-direction: column;
+				box-sizing: border-box;
+				min-height: 40%;
+			}
+			.all-art-mars{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.line1-art-mars{
+				max-width: 30%;
+			}
+			.photos-small-mars{
+				height: 50%;
+			}
+			
+			.conteneur-text-pop{
+				padding-left: 6%;
+				width: 44%;
+			}
+			.h2-pop{
+			}
+			.pop-price{
+			}
+			.star-group-pop{
+			}
+	}
+
+			
