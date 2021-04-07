@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>	
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 /">
 		<link rel="stylesheet" media="(max-width:1365px)" type="text/css" href="mobile-res.css">
 		<link media="(min-width:768px) and (max-width:1365px)" rel="stylesheet" type="text/css" href="ipad-res.css">
 		<link rel="stylesheet" type="text/css" media="(min-width:1366px)" href="big-res.css">
@@ -107,7 +108,7 @@
 				<section class="group-marseille sides-small-res"><!--First sector-->
 					<h1 class="titre-marseille">Hébergements à Marseille</h1>
 					<div class="all-art-mars"><!--flexbox of articles(first sector) -->
-						<article class="line1-art-mars">
+						<article class="line1-art-mars margin-top-heb-mars">
 							<img class="photos-Marseille" src="images/marseille/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-1.jpg">
 							<div class="conteneur-text-mars">
@@ -122,7 +123,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="line1-art-mars marg-left-ipad">
+						<article class="line1-art-mars marg-left-ipad margin-top-heb-mars">
 							<img class="photos-Marseille" src="images/marseille/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-2.jpg"><!--photos of small resolution-->
 							<div class="conteneur-text-mars">
@@ -137,7 +138,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="line1-art-mars marg-top-ipad">
+						<article class="line1-art-mars marg-top-ipad margin-top-heb-mars">
 							<img class="photos-Marseille" src="images/marseille/reisetopia-B8WIgxA_PFU-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-3.jpg">
 							<div class="conteneur-text-mars">
@@ -152,7 +153,7 @@
 								</div>
 							</div>	
 						</article>
-						<article class="line2-art-mars marg-left-ipad marg-top-ipad">
+						<article class="line1-art-mars marg-left-ipad marg-top-ipad">
 							<img class="photos-Marseille" src="images/marseille/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-4.jpg">
 							<div class="conteneur-text-mars">
@@ -167,7 +168,7 @@
 								</div>
 							</div>	
 						</article>
-						<article class="line2-art-mars marg-top-ipad" >
+						<article class="line1-art-mars marg-top-ipad" >
 							<img class="photos-Marseille" src="images/marseille/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-5.jpg">
 							<div class="conteneur-text-mars">
@@ -182,7 +183,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="line2-art-mars marg-left-ipad marg-top-ipad">
+						<article class="line1-art-mars marg-left-ipad marg-top-ipad">
 							<img class="photos-Marseille" src="images/marseille/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
 							<img class="photos-small-mars" src="images/marseille/large-6.jpg">
 							<div class="conteneur-text-mars">
@@ -208,7 +209,6 @@
 					<div class="all-art-pop sides-small-res art-2-ipad">
 						<article class="art-pop">
 							<img class="photos-popular" src="images/popular/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-							<img media="(min-width:1023px) and (max-width:1366px)" class="ipad-photos" src="images/popular/ipad1.jpg">
 							<div class="conteneur-text-pop">
 								<div>
 									<h2 class="h2-pop">Hôtel Le Soleil du matin</h2>
@@ -225,7 +225,6 @@
 						</article>
 						<article class="art-pop">
 							<img class="photos-popular" src="images/popular/aw-creative-VGs8z60yT2c-unsplash.jpg">
-							<img media="(min-width:1023px) and (max-width:1366px)"  class="ipad-photos" src="images/popular/ipad2.jpg">
 							<div class="conteneur-text-pop">
 								<div>
 			    					<h2 class="h2-pop"> Au coeur de l'eau Chambres 	d'hôtes </h2>
@@ -242,7 +241,6 @@
 			   			</article>
 			    		<article class="art-pop">
 			    			<img class="photos-popular" src="images/popular/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-			    			<img media="(min-width:1023px) and (max-width:1366px)" class="ipad-photos" src="images/popular/ipad3.jpg">
 			    			<div class="conteneur-text-pop">
 			    				<div>
 				    				<h2 class="h2-pop"> Hôtel Tout bleu et Blanc </h2>
@@ -263,29 +261,32 @@
 			<section class="group-act-mars sides-small-res"><!--Sector ACTIVITES MARSEILLE-->
 				<h1 class="titre-act-marseille">Activités à Marseille</h1>
 				<div class="all-art-act-mars">
-					<article class="art-act-m">
-						<img class="photos-act-Marseille" src="images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-						<img class="small-res-photo-act-mars" src="images/activities/large-11.jpg">
-						<div class="conteneur-text-act-mars">
-							<h2 class="h2-act-mars">Vieux Port</h2>
+					<div class="layout-1-art-mars">
+						<article class="art-act-m">
+							<img class="photos-act-Marseille" src="images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+							<img class="small-res-photo-act-mars" src="images/activities/large-11.jpg">
+							<div class="conteneur-text-act-mars">
+								<h2 class="h2-act-mars">Vieux Port</h2>
+							</div>
+						</article>
+						<div class="layout-horizontal-act-mars">
+							<article class="art-act-m">
+								<img class="photos-act-Marseille" src="images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+								<img class="small-res-photo-act-mars" src="images/activities/large-12.jpg">
+								<div class="conteneur-text-act-mars">
+									<h2 class="h2-act-mars">Port de Pomègues</h2>
+								</div>
+							</article>
+							<article class="art-act-m">
+								<img class="photos-act-Marseille" src="images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+								<img class="small-res-photo-act-mars" src="images/activities/large-13.jpg">
+								<div class="conteneur-text-act-mars">
+									<h2 class="h2-act-mars">Iles du Frioul</h2>
+								</div>
+							</article>
 						</div>
-					</article>
-					<div class="layout-horizontal-act-mars">
-						<article class="art-act-m">
-							<img class="photos-act-Marseille" src="images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-							<img class="small-res-photo-act-mars" src="images/activities/large-12.jpg">
-							<div class="conteneur-text-act-mars">
-								<h2 class="h2-act-mars">Port de Pomègues</h2>
-							</div>
-						</article>
-						<article class="art-act-m">
-							<img class="photos-act-Marseille" src="images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-							<img class="small-res-photo-act-mars" src="images/activities/large-13.jpg">
-							<div class="conteneur-text-act-mars">
-								<h2 class="h2-act-mars">Iles du Frioul</h2>
-							</div>
-						</article>
 					</div>
+					<div class="layout-2-art-mars">
 						<article class="art-act-m">
 							<img class="photos-act-Marseille" src="images/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash copie.jpg">
 							<img class="small-res-photo-act-mars" src="images/activities/large-14.jpg">
@@ -365,6 +366,7 @@
 	    </footer>
 	</body>
 </html>
+
 
 
 
