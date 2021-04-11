@@ -75,9 +75,6 @@ main{
 	font-size: 15px;
 	margin-top: 0px;
 }
-.small-form{
-	display: none;
-}
 .familial-form-ipad{
 	display: none;
 }
@@ -119,12 +116,16 @@ main{
 	margin:	0px;
 	box-sizing:	border-box;
 }
-.input-group input: focus{
+.input:focus{
  	outline: none;
  	box-sizing: border-box;
 }
 .search{
 	display: none;
+}
+.layout-form-eco-fam{
+	display: flex;
+	flex-direction: row;
 }
 .group-filtres{
 	display: flex;
@@ -171,6 +172,7 @@ main{
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
+	margin-left: 30px;
 }
 .children{
 	display: flex;
@@ -280,12 +282,12 @@ main{
 	flex-direction: column;
 	box-sizing: border-box;
 	max-width: 772px;
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
 }
 .titre-marseille{
 	display:flex;
-	background-color: #F2F2F2; 
 	font-size: 20px;
-	border-radius: 20px 20px 0px 0px;
 	padding-left: 40px;
 	margin: 0px;
 	padding-top: 40px;
@@ -294,7 +296,6 @@ main{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: #F2F2F2;
 	padding-left: 38px;
 	padding-right: 38px;
 	padding-top: 28px;
@@ -304,6 +305,9 @@ main{
 	box-shadow: 3px 3px 7px #EDEDED, -3px -3px 7px #EDEDED;
 	display: flex;
 	flex-direction: column;
+}
+.margin-top-heb-mars{
+	margin-bottom: 28px;
 }
 .photos-Marseille{
 	border-radius: 15px 15px 0px 0px;
@@ -339,38 +343,29 @@ main{
 	max-width: 9px;
 	font-size: 10.5px;
 }
-#gray{
+.gray{
 	color: gray !important;
-}
-.line2-art-mars{
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: 3px 3px 7px #EDEDED, -3px -3px 7px #EDEDED;
-	display: flex;
-	flex-direction: column;
-	margin-top: 28px;
 }
 .plus-Marseille{
 	display: flex;
 	font-size: 15px;
 	font-weight: bold;
-	background-color: #F2F2F2;
 	padding-top: 27px;
 	padding-left: 40px;
 	padding-bottom:24px;
-	border-radius: 0px 0px 20px 20px;
 }
 .group-popular{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 	max-width: 380px;
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
 }
 .pop-title-and-icon{
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	background-color: #F2F2F2; 
-	border-radius: 20px 20px 0px 0px;
 	box-sizing: border-box;
 	padding: 0px;
 	padding-left: 40px;
@@ -380,7 +375,7 @@ main{
 .titre-pop{
 	font-size: 20px;
 	margin: 0px;
-	box-sizing: 0px;
+	box-sizing: border-box;
 	padding-top: 40px;
 }
 .fa-chart-line{/*icon group popular*/
@@ -389,11 +384,9 @@ main{
 }
 .all-art-pop{
 	box-sizing: border-box;
-	border-radius: 0px 0px 20px 20px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-bottom: 34px;
-	background-color: #F2F2F2; 
 	max-width: 400px;
 }
 .art-pop{
@@ -407,7 +400,7 @@ main{
 	border: 5px solid white;
 	border-radius: 20px 0px 0px 20px;
 	box-shadow: 3px 3px 7px #EDEDED, -3px -3px 7px #EDEDED;
-	width: 110;
+	width: 110px;
 	height: 110px;
 }
 .conteneur-text-pop{
@@ -417,7 +410,6 @@ main{
 	padding-left: 10px;
 	padding-right: 10px;
 	box-sizing: border-box;
-
 }
 .h2-pop{
 	font-size: 14px;
@@ -443,6 +435,8 @@ main{
 	max-width: 1366px;
 	justify-content: space-between;
 	margin-top: 20px;
+	height: 400px;
+	margin-top: 3%;
 }
 .art-act-m{
 	border-radius: 20px 20px 20px 20px;
@@ -467,7 +461,22 @@ main{
 .layout-horizontal-act-mars{
 	display: flex;
 	flex-direction: column;
+	align-items: stretch;
 	justify-content: space-between;
+}
+.layout-1-art-mars{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-between;
+	width: 48.5%;
+}
+.layout-2-art-mars{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-between;
+	width: 48.5%;
 }
 footer{
 	background-color: #F2F2F2; 
