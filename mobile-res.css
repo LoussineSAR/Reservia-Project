@@ -115,55 +115,22 @@ body{
 	justify-content: space-between;
 	max-width: 296px;
 }
-.group-eco{ /* economique of big resolution*/
-	display: none;
-}
-.group-familial{/* familal of big resolution*/
-	display: none;
-}
-
-.eco-small{/* money icon and the word "economique" together*/
-display: flex;
-align-items: center;
-box-sizing: border-box;
-}
-.money-small{ /*money icon*/
-display: flex;
-background: #DEEBFF;
-border-radius: 50px 50px 50px 50px;
-padding: 14px 12px 14px 12px;
-font-size: 15px;
-color: #0065FC;
-position: absolute; 
-box-sizing: border-box;
-}
-.eco-button-small{/* word "economique"*/
-display: flex;
-padding: 12px 18px 12px 48px;
-background-color: #FFFFFF;
-border: 1px solid #DCDCDC;
-border-width: 1px;
-border-radius: 50px 50px 50px 50px;
-font-weight: bold;
-font-size: 14px;
-box-sizing: border-box;
-height: 44px;
-}
-.fam-small{ /* kid icon and the word "familial" together*/
+.group-eco{
 	display: flex;
-	margin-left: 5px;
+	align-items: center;
+	box-sizing: border-box;
 }
-.chil-small{/*child icon*/
+.money{
 	display: flex;
 	background: #DEEBFF;
 	border-radius: 50px 50px 50px 50px;
-	padding: 12px 15px 12px 15px;
-	font-size: 20px ;
+	padding: 15px 13px 15px 13px;
+	font-size: 14px;
 	color: #0065FC;
 	position: absolute; 
 	box-sizing: border-box;
 }
-.fam-button-small{/* "word" familial */
+.eco-button{
 	display: flex;
 	padding: 12px 18px 12px 48px;
 	background-color: #FFFFFF;
@@ -173,7 +140,37 @@ height: 44px;
 	font-weight: bold;
 	font-size: 14px;
 	box-sizing: border-box;
-	height: 44px;
+}
+.layout-form-eco-fam{
+	display: flex;
+	flex-direction: row;
+}
+.group-familial{
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	margin-left: 4%;
+}
+.children{
+	display: flex;
+	background: #DEEBFF;
+	border-radius: 50px 50px 50px 50px;
+	padding: 13px 16px 13px 16px;
+	font-size: 17px;
+	color: #0065FC;
+	position: absolute; 
+	box-sizing: border-box;
+}
+.fam-button{
+	display: flex;
+	padding: 12px 18px 12px 48px;
+	background-color: #FFFFFF;
+	border: 1px solid #DCDCDC;
+	border-width: 1px;
+	border-radius: 50px 50px 50px 50px;
+	font-weight: bold;
+	font-size: 14px;
+	box-sizing: border-box;
 }
 .group-romantic{  /* heart icon and the word "romantique" together*/
 	display: flex;
@@ -291,13 +288,14 @@ height: 44px;
 	box-shadow: 0px 0px 5px #EDEDED;
 	margin-top: 8px;
 	box-sizing: border-box;
+	align-items: stretch;
 }
 .photos-popular{
 	border-radius: 15px 0px 0px 15px;
 	box-sizing: border-box;
 	border: 5px solid white;
 	width: 38%;
-	height: 45%;
+	height: 100%;
 }
 .conteneur-text-pop{/* white background behinde the text*/
 	display: flex;
@@ -445,12 +443,14 @@ width: 100%;
 	padding-top:10px;
 	margin-top: -17PX;
 }
-.group-footer{/*big res footer*/
-	display: none;
-}
 footer{
 	background-color: #F2F2F2;
 	padding-bottom: 16px;
+}
+.group-footer{
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 8%;
 }
 .footer-a{
 	margin-top: 6px;
@@ -458,10 +458,6 @@ footer{
 	color: black;
 	font-size: 14px;
 }
-.group-footer-mob{
-	padding-top: 20px;
-}
-
 .h1-footer{
 	font-size:14px;
 }
