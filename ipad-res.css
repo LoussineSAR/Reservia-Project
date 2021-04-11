@@ -69,10 +69,10 @@
 		margin-left: 5.5px;
 	}
 	.group-romantic{/* group form romantique*/
-		margin-left: 5.5px;
+		margin-left: 20px;
 	}
 	.group-animaux{/* animaux autorisés*/
-		margin-left: -9.5px;
+		margin-left: 7px;
 	}
 	.eco-button-small{/*text "économique"/ ipad mini768px(7,9 pouces*/
 		padding-left: 48px;
@@ -91,63 +91,44 @@
 		width: 200px;
 	}
 	.group-popular{
-		width: 100%;
 		box-sizing: border-box;
-	}
-	.pop-title-and-icon{
-		display: flex;
-		box-sizing: border-box;
-		margin: auto;
 	}
 	.all-art-pop{/*all articles of group populaire (ipad mini 768px)*/
 		display: flex;
 		flex-direction: column;
 		margin-top: 1%;
+		max-width: 90%;
+		margin: auto;
 	}
 	.art-pop{/*each article of group populaire (ipad mini 768px)*/
 		margin-bottom: 28px;
+		align-items: stretch;
 	}
-	.ipad-photos {/*photos of group populaire (ipad mini 768px)*/
-		border-radius: 15px 15px 0px 0px  !important;
-		margin-top: 0px !important;
-		width: 100%;
-		border: 4px solid white;
-		box-sizing: border-box;
+	.art-pop:first-child{
+		margin-left: 0rem;
 	}
 	.photos-popular{
-		display: none;
+		border-radius: 20px 0px 0px 20px;
+		width: 28%;
 	}
 	.conteneur-text-pop{/* text container/group populaire (ipad mini 768px)*/
-		border-radius: 0px 0px 20px 20px;
-		max-width: 67%;
-		max-height: 100%;
-	}
-	.h2-pop{/* h2 group populaire(ipad mini 768px)*/
-		padding-left: 10px;
-	}
-	.pop-price{/* Prix group populaire (ipad mini 768px)*/
-		padding-left: 10px;
+		border-radius: 0px 20px 20px 0px;
 	}
 	.star-group-pop{/* star group / group populaire(ipad mini 768px)*/
-		padding-left: 10px;
 		margin-bottom: 10%;
 	}
 	.titre-marseille{/* Title group Marseille(ipad mini 768px)*/
 		margin-top: 42px;
 	}
 	.line1-art-mars{
-		max-width: 500px;
-		margin-top: 30px;
-	}
-	.line2-art-mars{
-		max-width: 500px;
+		max-width: 90%;
 		margin-top: 30px;
 	}
 	.art-act-m{
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 32px;
-		width: 445px;
+		width: 100%;
+		margin-bottom: 9%;
 		}
 	.conteneur-text-mars{
 	}
@@ -156,56 +137,54 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.plus-Marseille{/* Last phrase /group Marseille(ipad mini 768px)*/
 		margin-top: 40px;
 		margin-bottom: 40px
 	}
 	.group-act-mars{
-		width: 445px;
+		display: flex;
+		flex-direction: column;
 		box-sizing: border-box;
-		margin: auto;
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-top: 0px;
+		margin-top: 0px;
 	}
 	.group-footer{/*  All tests together /footer /Activités Marseille (ipad mini 768px)*/
 		display: flex;
 		justify-content: space-between;
 		box-sizing: border-box;
-		padding-left: 7%;
-		padding-right: 7%;
 		margin: auto;
+		align-items: baseline;
+		padding-top: 3% !important;
 	}
 	.titre-act-marseille{/*  Title /Activités Marseille (ipad mini 768px)*/
-		margin-bottom: 34px;
+		margin-bottom: 28px;
+
 	}
 	.small-res-photo-act-mars{
-		border-radius: 15px 0px 0px 15px;
+		border-radius: 15px 15px 0px 0px;
 	}
 	.conteneur-text-act-mars{
 		background-color: white;
+		border-radius: 0px 0px 15px 15px;
 	}
 	.h2-act-mars{
 		margin-top: 50px;
 		margin-left: 20px;
 	}
-	.group-footer-mob{
-		display: none;
-	}
-	@media screen and (min-width:1024px) and (max-width:1366px){
-				.all-art-pop{
-					display: flex;
+	@media screen and (min-width:800px) and (max-width:1366px){
+			.all-art-pop{
+				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				margin-bottom: 0px;
 				margin-top: 0px;
 			}
+			.art-pop{
+				margin-left: 1rem;
+			}
 			.ipad-photos{
 				width: 90%
-			}
-			.art-pop{
-				display: flex;
-				flex-direction: column;
-				box-sizing: border-box;
 			}
 			.all-art-mars{
 				display: flex;
@@ -219,10 +198,8 @@
 			.photos-small-mars{
 				height: 50%;
 			}
-			
 			.conteneur-text-pop{
-				padding-left: 6%;
-				width: 44%;
+				width: 45%;
 			}
 			.h2-pop{
 			}
@@ -230,6 +207,49 @@
 			}
 			.star-group-pop{
 			}
-	}
+			.all-art-act-mars{
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+			.small-res-photo-act-mars{
+				border-radius: 20px 20px 0px 0px;
+			}
+			.h2-act-mars{
+				margin-top: 20px;
+			}
+			.pop-title-and-icon{
+				max-width: 100%;
+				display: flex;
+				box-sizing: border-box;
+				margin: auto;
+			}
+			.all-art-pop {
+				max-width: 100%;
+			}
+			.layout-form-eco-fam{
+				margin-left: 20px;
+			}
+			.group-familial{
+				margin-left: 20px;
+			}
+			.layout-1-art-mars{
+				display: flex;
+				flex-direction: column;
+				box-sizing: border-box;
+				margin-right: 4.8%;
+			}
+			.layout-2-art-mars{
+				display: flex;
+				flex-direction: column;
+				box-sizing: border-box;
+			}
+			.layout-horizontal-act-mars{
+				display: flex;
+				flex-direction: column;
+
+			}
+		}
 
 			
