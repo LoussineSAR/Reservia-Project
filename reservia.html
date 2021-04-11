@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>	
+<html lang="fr">	
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0 /">
-		<link rel="stylesheet" media="(max-width:1365px)" type="text/css" href="mobile-res.css">
-		<link media="(min-width:768px) and (max-width:1365px)" rel="stylesheet" type="text/css" href="ipad-res.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link rel="stylesheet" media="(max-width:1365.98px)" type="text/css" href="mobile-res.css">
+		<link media="(min-width:768px) and (max-width:1365.98px)" rel="stylesheet" type="text/css" href="ipad-res.css">
 		<link rel="stylesheet" type="text/css" media="(min-width:1366px)" href="big-res.css">
-		<link href="https://fonts.google.com/specimen/Raleway?sidebar.open=true&selection.family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/all.css">
 		<title>Réservia</title>
-		<meta charset="utf-8">
 	</head>
 	<body class="body">
-		<header class="big-res-header">
-			<img class="logo" src="images/Reservia.png">
+		<header class="big-res-header"><!--header pour grand ecrans-->
+			<img class="logo" alt="the is the word Reservia in blue letters, which is also the name of the company" src="images/Reservia.png">
 			<nav class="nav-menu">
 				<a class="menu-hébergement" href="">Hébergements</a>
 				<a class="menu-activités" href="">Activités</a>
 				<a class="menu-inscription" href="">S'inscrire</a>
 			</nav>
 		</header>
-		<!--class "petite-resolution" is for mobile(from 320px to 414px)-->
-		<header class="mobile-res-header">
+		<header class="mobile-res-header"> <!--header pour les mobiles-->
 				<div class="logo-and-inscription sides-small-res">
 					<p class="logo">
-						<img src="images/Reservia.png">
+						<img alt="the is the word Reservia in blue letters, which is also the name of the company" src="images/Reservia.png">
 					</p>
 					<nav>
 						<a class="menu-inscription" href="">S'inscrire</a>
@@ -34,8 +35,8 @@
 				<a class="menu-activités" href="">Activités</a>
 			</nav>
 		</header>
-		<header class="ipad-header sides-small-res">
-			<img class="logo-ipad" src="images/Reservia.png">
+		<header class="ipad-header sides-small-res"><!--header pour les ipad-->
+			<img class="logo-ipad" alt="the is the word Reservia in blue letters, which is also the name of the company" src="images/Reservia.png">
 			<nav class="nav-menu-ipad">
 				<a class="hébergement-header" href="">Hébergements</a>
 				<a class="activités-header" href="">Activités</a>
@@ -53,37 +54,25 @@
 					<input type="text" value="Marseille,France">
 					<button>Rechercher</button>
 					<span class="search"><!--class "search" is for small resolution-->
-						<i class="fas fa-search" media="(max-width: 600px)"></i><!--search icon-->
+						<i class="fas fa-search" ></i><!--search icon-->
 					</span>
 				</nav>
 				<form class="group-filtres" method="post" action="traitement.php">
 					<h1 class="filtres">Filtres</h1>
-					<div class="small-form"><!--class "small-form is for small resolution-->
-						<nav class="eco-small">
-							<span class="money-small">
-								<i class="fas fa-money-bill-wave"></i><!--money icon-->
+					<div class="layout-form-eco-fam">
+						<nav class="group-eco">
+							<span class="money">
+								<i class="fas fa-money-bill-wave"></i><!--icon money-->
 							</span>
-							<button class="eco-button-small">Économique</button>
+							<button class="eco-button">Économique</button>
 						</nav>
-						<nav class="fam-small">
-							<span class="chil-small">
-								<i class="fas fa-child"></i><!--children icon -->
+						<nav class="group-familial" >
+							<span class="children">
+								<i class="fas fa-child"></i><!--children icon-->
 							</span>
-							<button class="fam-button-small">Familial</button><!--man hands up icon-->
+							<button class="fam-button">Familial</button><!--icon man hands up-->
 						</nav>
-					</div><!--class "small-form for economique and familial ends here-->
-					<nav class="group-eco">
-						<span class="money">
-							<i class="fas fa-money-bill-wave"></i><!--icon money-->
-						</span>
-						<button class="eco-button">Économique</button>
-					</nav>
-					<nav class="group-familial" >
-						<span class="children">
-							<i class="fas fa-child"></i><!--children icon-->
-						</span>
-						<button class="fam-button">Familial</button><!--icon man hands up-->
-					</nav>
+					</div>
 					<nav class="group-romantic">
 						<span class="heart">
 							<i class="fas fa-heart"></i><!--icon heart-->
@@ -109,8 +98,8 @@
 					<h1 class="titre-marseille">Hébergements à Marseille</h1>
 					<div class="all-art-mars"><!--flexbox of articles(first sector) -->
 						<article class="line1-art-mars margin-top-heb-mars">
-							<img class="photos-Marseille" src="images/marseille/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-1.jpg">
+							<img class="photos-Marseille" alt="a room, bunk bed on the right, behind of bunk bed, along the bed, a window with opened white wood interior shutters on the left, then to the width of the bed another window with opened white wood interior shutters on the righ and on the left, containing a opend turquoise curtains on the right, a mirror on the left of the window,in front of the window a small fan" src="images/marseille/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+							<img class="photos-small-mars" alt="bunk bed on the right, behind of bunk bed, along the bed, a window with opened white wood interior shutters on the left, then to the width of the bed another window with opened white wood interior shutters on the righ and on the left, containing a opend turquoise curtains on the right, a miror on the left of the window,in front of the window a small fan" src="images/marseille/large-1.jpg">
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Auberge la Cannebière</h2>
 								<p class="price-heb-mars">Nuit à partir de 25€</p>
@@ -119,13 +108,13 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 							</div>
 						</article>
 						<article class="line1-art-mars marg-left-ipad margin-top-heb-mars">
-							<img class="photos-Marseille" src="images/marseille/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-2.jpg"><!--photos of small resolution-->
+							<img class="photos-Marseille" alt="a room with two bed inside, an opened window with white transparent curtains along the second, 2 small paintings on the wall to the width of the bed" src="images/marseille/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+							<img class="photos-small-mars" alt="a room withe a bed, along the bed a window with multicolor curtains.On the wall to the width of the bed a mirror.Hanging chandelier in the middle of the room" src="images/marseille/large-2.jpg"><!--photos of small resolution-->
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Hôtel du port</h2>
 								<p class="price-heb-mars">Nuit à partir de 52€</p>
@@ -139,8 +128,8 @@
 							</div>
 						</article>
 						<article class="line1-art-mars marg-top-ipad margin-top-heb-mars">
-							<img class="photos-Marseille" src="images/marseille/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-3.jpg">
+							<img class="photos-Marseille" alt="a bed with nightstand on the right, then a shelf containing a mirror on the door along the bed" src="images/marseille/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+							<img class="photos-small-mars" alt="view of a room with a nightstand next to the bed, then a shelf containing a mirror on the door along the bed" src="images/marseille/large-3.jpg">
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Hôtel Les mouettes</h2>
 								<p class="price-heb-mars">Nuit à partir de 76€</p>
@@ -149,13 +138,13 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 							</div>	
 						</article>
 						<article class="line1-art-mars marg-left-ipad marg-top-ipad">
-							<img class="photos-Marseille" src="images/marseille/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-4.jpg">
+							<img class="photos-Marseille" alt="a bed with blue and white stripes pillows on.There are two nightstand on each sides, one lamp on each night tables. On the top side of the bed on the wall there is a painting of sea.A curtain is visible on the left side of the bed." src="images/marseille/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+							<img class="photos-small-mars" alt="a bed with blue and white stripes pillows on.There are two nightstand on each sides, one lamp on each night tables. On the top side of the bed on the wall there is a painting of sea.A curtain is visible on the left side of the bed." src="images/marseille/large-4.jpg">
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Hôtel de la mer</h2>
 								<p class="price-heb-mars">Nuit à partir de 46€</p>
@@ -163,14 +152,14 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray"class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 							</div>	
 						</article>
 						<article class="line1-art-mars marg-top-ipad" >
-							<img class="photos-Marseille" src="images/marseille/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-5.jpg">
+							<img class="photos-Marseille" alt="two wooden bunk bed with gray and blue curtains" src="images/marseille/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+							<img class="photos-small-mars" alt="two wooden bunk bed with gray and blue curtains" src="images/marseille/large-5.jpg">
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Auberge Le Panier</h2>
 								<p class="price-heb-mars">Nuit à partir de 23€</p>
@@ -179,13 +168,13 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 							</div>
 						</article>
 						<article class="line1-art-mars marg-left-ipad marg-top-ipad">
-							<img class="photos-Marseille" src="images/marseille/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-							<img class="photos-small-mars" src="images/marseille/large-6.jpg">
+							<img class="photos-Marseille" alt="two bed with a wooden headboard, breadthwise of the bed on the left there is a window with gray curtain, on the top of the bed on the wall a TV, under the TV a wooden work dest with wooden chair, on the desk work a phone and a lamp" src="images/marseille/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+							<img class="photos-small-mars" alt="two bed with a wooden headboard, breadthwise of the bed on the left there is a window with gray curtain, on the top of the bed on the wall a TV, under the TV a wooden work dest with wooden chair, on the desk work a phone and a lamp" src="images/marseille/large-6.jpg">
 							<div class="conteneur-text-mars">
 								<h2 class="h2-heb-mars">Hôtel chez Amina</h2>
 								<p class="price-heb-mars" >Nuit à partir de 96€</p>
@@ -208,7 +197,7 @@
 					</div>
 					<div class="all-art-pop sides-small-res art-2-ipad">
 						<article class="art-pop">
-							<img class="photos-popular" src="images/popular/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+							<img class="photos-popular" alt="a bed with 3 white pillows on, widthwise of the bed on the lef side, there is a window with multicolor curtain, on the top side of the bed on the wall a big mirror with a golden frame.A chandelier hangs from the ceiling in the center of the room.In the mirror there is the large painting which hangs on the opposite wall and a gray-turquoise lamp" src="images/popular/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 							<div class="conteneur-text-pop">
 								<div>
 									<h2 class="h2-pop">Hôtel Le Soleil du matin</h2>
@@ -224,7 +213,7 @@
 							</div>
 						</article>
 						<article class="art-pop">
-							<img class="photos-popular" src="images/popular/aw-creative-VGs8z60yT2c-unsplash.jpg">
+							<img class="photos-popular" alt="A bed with beige headboards, with some beige and white pillows on.There are nightstands on each side of the bed, lamps on the nightstands, a window on the right of the bad" src="images/popular/aw-creative-VGs8z60yT2c-unsplash.jpg">
 							<div class="conteneur-text-pop">
 								<div>
 			    					<h2 class="h2-pop"> Au coeur de l'eau Chambres 	d'hôtes </h2>
@@ -235,12 +224,12 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 			    			</div>
 			   			</article>
 			    		<article class="art-pop">
-			    			<img class="photos-popular" src="images/popular/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+			    			<img class="photos-popular" alt="A bed with some white pillows on, there are two nightstands on each side of the bed ans two small lamps hanging on headbord of the bed" src="images/popular/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
 			    			<div class="conteneur-text-pop">
 			    				<div>
 				    				<h2 class="h2-pop"> Hôtel Tout bleu et Blanc </h2>
@@ -251,7 +240,7 @@
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
-									<i id="gray" class="fas fa-star"></i>
+									<i class="fas fa-star gray"></i>
 								</div>
 							</div>
 						</article>
@@ -263,23 +252,23 @@
 				<div class="all-art-act-mars">
 					<div class="layout-1-art-mars">
 						<article class="art-act-m">
-							<img class="photos-act-Marseille" src="images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-							<img class="small-res-photo-act-mars" src="images/activities/large-11.jpg">
+							<img class="photos-act-Marseille" alt="A view of the city of Marseille, a boat station with buildings  on thé background" src="images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+							<img alt="A view of the city of Marseille, a boat station with buildings  on thé background" class="small-res-photo-act-mars" src="images/activities/large-11.jpg">
 							<div class="conteneur-text-act-mars">
 								<h2 class="h2-act-mars">Vieux Port</h2>
 							</div>
 						</article>
 						<div class="layout-horizontal-act-mars">
 							<article class="art-act-m">
-								<img class="photos-act-Marseille" src="images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-								<img class="small-res-photo-act-mars" src="images/activities/large-12.jpg">
+								<img class="photos-act-Marseille" alt="fortress on the rocks" src="images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+								<img class="small-res-photo-act-mars" alt="fortress on the rocks" src="images/activities/large-12.jpg">
 								<div class="conteneur-text-act-mars">
 									<h2 class="h2-act-mars">Port de Pomègues</h2>
 								</div>
 							</article>
 							<article class="art-act-m">
-								<img class="photos-act-Marseille" src="images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-								<img class="small-res-photo-act-mars" src="images/activities/large-13.jpg">
+								<img class="photos-act-Marseille" alt="A binoculars by the sea, with the sea on the background" src="images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+								<img class="small-res-photo-act-mars" alt="A binoculars by the sea, with the sea on the background" src="images/activities/large-13.jpg">
 								<div class="conteneur-text-act-mars">
 									<h2 class="h2-act-mars">Iles du Frioul</h2>
 								</div>
@@ -288,23 +277,23 @@
 					</div>
 					<div class="layout-2-art-mars">
 						<article class="art-act-m">
-							<img class="photos-act-Marseille" src="images/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash copie.jpg">
-							<img class="small-res-photo-act-mars" src="images/activities/large-14.jpg">
+							<img class="photos-act-Marseille" alt="Rocks with the sea and the sky on the background" src="images/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+							<img class="small-res-photo-act-mars" alt="Rocks with the sea and the sky on the background" src="images/activities/large-14.jpg">
 							<div class="conteneur-text-act-mars">
 								<h2 class="h2-act-mars">Parc National des Calanques</h2>
 							</div>
 						</article>
 						<div class="layout-horizontal-act-mars marg-top-art-mars">
 							<article class="art-act-m">
-								<img class="photos-act-Marseille" src="images/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-								<img class="small-res-photo-act-mars" src="images/activities/large-15.jpg">
+								<img class="photos-act-Marseille" alt="Houses and buildings.Far away, on the rocks a cathedral" src="images/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+								<img class="small-res-photo-act-mars" alt="Houses and buildings.Far away, on the rocks a cathedral" src="images/activities/large-15.jpg">
 								<div class="conteneur-text-act-mars">
 									<h2 class="h2-act-mars">Notre-Dame-de-la-Garde</h2>
 								</div>
 							</article>
 							<article class="art-act-m marg-top4 marg-top-art-mars">
-								<img class="photos-act-Marseille" src="images/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-								<img class="small-res-photo-act-mars" src="images/activities/large-16.jpg">
+								<img class="photos-act-Marseille" alt="A waterfall with a historic building in the background" src="images/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+								<img class="small-res-photo-act-mars" alt="A waterfall with a historic building in the background" src="images/activities/large-16.jpg">
 								<div class="conteneur-text-act-mars">
 									<h2 class="h2-act-mars">Parc Longchamp</h2>
 								</div>
@@ -315,7 +304,7 @@
 			</section>
 		</main>
 		<footer><!--for gray background-->
-			<section class="group-footer">
+			<div class="group-footer">
 				<div>
 					<h1 class="h1-footer">A propos</h1>
 					<nav class="cols-footer">
@@ -338,31 +327,7 @@
 						<a class="footer-a" href="">Nous contacter</a>
 					</nav>
 				</div>
-			</section>
-			<section class="group-footer-mob">
-				<div class="sides-small-res">
-					<h1 class="h1-footer">A propos</h1>
-					<nav class="cols-footer">
-						<a class="footer-a" href="">Fonctionnement du site</a>
-						<a class="footer-a" href="">Conditions générales de vente</a>
-						<a class="footer-a" href="">Données et confidentialité</a>
-					</nav>
-				</div>
-				<div class="sides-small-res">
-					<h1 class="h1-footer">Nos hébergements</h1>
-					<nav class="cols-footer">
-						<a class="footer-a"  href="">Charte qualité</a>
-						<a class="footer-a"  href="">Soumettre votre hôtel</a>
-					</nav>
-				</div>
-				<div class="sides-small-res">
-					<h1 class="h1-footer">Assistance</h1>
-					<nav class="cols-footer">
-						<a class="footer-a" href="">Centre d'aide</a>
-						<a class="footer-a" href="">Nous contacter</a>
-					</nav>
-				</div>
-			</section>
+			</div>
 	    </footer>
 	</body>
 </html>
