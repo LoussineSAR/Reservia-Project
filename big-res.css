@@ -320,16 +320,23 @@ main{
 	background-color: white;
 	border-radius: 0px 0px 15px 15px;
 	padding-left: 15px;
+	margin-top: 0px;
 }
 .h2-heb-mars{
 	display: flex;
 	font-size: 14px;
 	margin-top: 4px;
 	margin-bottom: 4px;
+	text-decoration: none;
 }
 .price-heb-mars{
 	font-size: 13px;
 	margin: 0px;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 .star-group-mars{
 	margin-top: 6px;
@@ -391,6 +398,7 @@ main{
 }
 .art-pop{
 	display: flex;
+	flex-direction: row;
 	border-radius: 20px 20px 20px 20px;
 	margin-top: 28px;
 	box-sizing: border-box;

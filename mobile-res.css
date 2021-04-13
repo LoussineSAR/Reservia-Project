@@ -9,8 +9,6 @@ body{
 .ipad-header{
 	display: none;
 }
-.mobile-res-header{
-}
 .sides-small-res{
 	box-sizing: border-box;
 	padding-left: 6%;
@@ -391,6 +389,10 @@ width: 100%;
 	box-shadow: 3px 3px 7px #EDEDED, -3px -3px 7px #EDEDED;
 	border: 5px solid white;
 	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 .plus-Marseille{/* last information phrase "Affichez plus of group Marseille"*/
 	margin-top: 26px;
